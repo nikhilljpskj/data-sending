@@ -9,7 +9,7 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await fetch('https://<app2-vercel-domain>/webhook', {
+    await fetch('https://data-integration-sage.vercel.app/webhook', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData)
